@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
+  base: '/goit-js-hw-09/', 
   root: 'src',
   build: {
     rollupOptions: {
@@ -10,11 +11,7 @@ export default defineConfig({
         gallery: resolve(__dirname, 'src/1-gallery.html'),
         form: resolve(__dirname, 'src/2-form.html'),
       },
+      outDir: '../dist',
     },
-    outDir: '../dist',
   },
-  server: {
-    // Це допоможе Vite краще орієнтуватися в папці src
-    open: '/index.html'
-  }
 });
