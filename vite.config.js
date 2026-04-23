@@ -11,7 +11,7 @@ export default defineConfig({
         gallery: resolve(__dirname, 'src/1-gallery.html'),
         form: resolve(__dirname, 'src/2-form.html'),
       },
-      outDir: '../dist',
+      outDir: 'dist',
     },
   },
 });
